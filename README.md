@@ -11,17 +11,17 @@ import java.util.Random;
 /**
  * Clase que crea una interfaz gráfica para generar y gestionar contraseñas de usuarios.
  */
-public class GeneradorContrasenaSimpleGUI extends JFrame {
+public class GeneradordeContraseñas extends JFrame {
 
     private JTextField campoUsuario;
     private JTextField campoLongitud;
     private JTextArea areaResultado;
 
     /**
-     * Constructor de la clase GeneradorContrasenaSimpleGUI.
+     * Constructor de la clase GeneradordeContraseñas.
      * Configura la ventana principal, inicializa los componentes y define las acciones de los botones.
      */
-    public GeneradorContrasenaSimpleGUI() {
+    public GeneradordeContraseñas() {
         // Configuración de la ventana principal
         setTitle("Generador de Contraseñas");
         setSize(600, 400);
@@ -184,7 +184,7 @@ public class GeneradorContrasenaSimpleGUI extends JFrame {
      */
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
-            GeneradorContrasenaSimpleGUI ventana = new GeneradorContrasenaSimpleGUI();
+            GeneradordeContraseñas ventana = new GeneradordeContraseñas();
             ventana.setVisible(true);
         });
     }
